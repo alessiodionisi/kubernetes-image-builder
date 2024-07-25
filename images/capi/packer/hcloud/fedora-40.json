@@ -1,0 +1,10 @@
+{
+  "build_name": "fedora-40",
+  "distribution_release": "40",
+  "distribution_version": "40",
+  "distribution": "fedora",
+  "epel_rpm_gpg_key": "",
+  "image": "fedora-40",
+  "redhat_epel_rpm": "",
+  "ssh_username": "root"
+}

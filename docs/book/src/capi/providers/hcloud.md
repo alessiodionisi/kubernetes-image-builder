@@ -25,6 +25,7 @@ the different operating systems.
 | File | Description |
 |------|-------------|
 | `centos-7.json`    | The settings for the CentOS 7 image     |
+| `fedora-40.json`   | The settings for the Fedora 40 image    |
 | `flatcar.json`     | The settings for the Flatcar image      |
 | `rockylinux-8.json`| The settings for the RockyLinux 8 image |
 | `rockylinux-9.json`| The settings for the RockyLinux 9 image |

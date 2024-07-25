@@ -29,6 +29,7 @@
     path: /etc/yum.conf
     regexp: ^exclude=
     line: exclude={{ package_list }}
+    create: true
 
 - ansible.builtin.import_tasks: rpm_repos.yml
 

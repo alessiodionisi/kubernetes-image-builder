@@ -371,7 +371,7 @@ POWERVS_BUILD_NAMES         ?= powervs-centos-8 powervs-centos-9
 
 NUTANIX_BUILD_NAMES ?= nutanix-ubuntu-2004 nutanix-ubuntu-2204 nutanix-ubuntu-2404 nutanix-rhel-8 nutanix-rhel-9 nutanix-rockylinux-8 nutanix-rockylinux-9 nutanix-flatcar nutanix-windows-2022
 
-HCLOUD_BUILD_NAMES ?= hcloud-ubuntu-2004 hcloud-ubuntu-2204 hcloud-ubuntu-2404 hcloud-centos-7 hcloud-rockylinux-8 hcloud-rockylinux-9 hcloud-flatcar
+HCLOUD_BUILD_NAMES ?= hcloud-ubuntu-2004 hcloud-ubuntu-2204 hcloud-ubuntu-2404 hcloud-centos-7 hcloud-rockylinux-8 hcloud-rockylinux-9 hcloud-flatcar hcloud-fedora-40
 
 PROXMOX_BUILD_NAMES 		?= proxmox-ubuntu-2204 proxmox-ubuntu-2404 proxmox-rockylinux-9
 
@@ -843,6 +843,7 @@ build-hcloud-centos-7: ## Builds the Hetzner Cloud CentOS 7 image
 build-hcloud-rockylinux-8: ## Builds the Hetzner Cloud Rocky Linux 8 image
 build-hcloud-rockylinux-9: ## Builds the Hetzner Cloud Rocky Linux 9 image
 build-hcloud-flatcar: ## Builds the Hetzner Cloud Flatcar image
+build-hcloud-fedora-40: ## Builds the Hetzner Cloud fedora-40 image
 build-hcloud-all: $(HCLOUD_BUILD_TARGETS) ## Builds all Hetzner Cloud image
 
 build-proxmox-ubuntu-2204: ## Builds the Proxmox ubuntu-2204 image
@@ -1021,6 +1022,7 @@ validate-hcloud-centos-7: ## Validates CentOS 7 Hetzner Cloud Packer config
 validate-hcloud-rockylinux-8: ## Validates Rocky Linux 8 Hetzner Cloud Packer config
 validate-hcloud-rockylinux-9: ## Validates the Hetzner Cloud Rocky Linux 9 Packer config
 validate-hcloud-flatcar: ## Validates the Hetzner Cloud Flatcar Packer config
+validate-hcloud-fedora-40: ## Validates the Hetzner Cloud Fedora 40 Packer config
 validate-hcloud-all: $(HCLOUD_VALIDATE_TARGETS) ## Validates all Hetzner Cloud Packer config
 
 validate-proxmox-ubuntu-2204: ## Validates Ubuntu 22.04 Proxmox Packer config
